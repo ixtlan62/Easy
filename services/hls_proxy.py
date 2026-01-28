@@ -1452,7 +1452,7 @@ class HLSProxy:
                     # ✅ Gestisce manifest HLS standard e mascherati da .css (usati da DLHD)
                     # Per .css, verifica se contiene #EXTM3U (signature HLS) per rilevare manifest mascherati
                     is_hls_manifest = 'mpegurl' in content_type or stream_url.endswith('.m3u8')
-                    is_css_file = stream_url.endswith('.css')
+                    is_css_file = stream_url.endswith('mono.css')
                     
                     if is_hls_manifest or is_css_file:
                         try:
